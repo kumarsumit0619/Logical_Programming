@@ -1,6 +1,5 @@
 //using simple function
 const fileName= "invoice.xlsx";
-
 function getFileExtension(fName){
     let i,count=0,res='';
     for(i=0;i<fName.length;i++){
@@ -12,3 +11,7 @@ function getFileExtension(fName){
     return res;
 }
 console.log(getFileExtension(fileName));//.xlsx
+
+//using slice function
+const getFileExtension = (str) => str.slice(str.lastIndexOf('.'));
+console.log(getFileExtension("index.xlsx"));  //.xlsx
